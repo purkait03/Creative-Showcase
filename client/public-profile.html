@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Profile - Creative Showcase</title>
+    <link href="./css/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600 tracking-tight">
+                        Creative Showcase
+                    </a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div id="guest-nav" class="hidden flex items-center space-x-4">
+                        <a href="login.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Login</a>
+                        <a href="signup.html" class="bg-blue-600 text-white px-5 py-2 rounded-full shadow-sm hover:bg-blue-700 transition font-medium">
+                            Sign Up
+                        </a>
+                    </div>
+
+                    <div id="user-nav" class="hidden flex items-center space-x-6">
+                        <a href="dashboard.html" class="text-gray-600 hover:text-blue-600 font-medium transition">My Dashboard</a>
+                        <button id="logout-btn" class="text-red-500 hover:text-red-700 font-medium transition">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        
+        <div id="profile-header" class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-10 flex flex-col items-center text-center opacity-0 transition-opacity duration-500">
+            <div class="relative mb-4">
+                <img id="profile-avatar" src="assets/images/default-avatar.png" 
+                     alt="Profile" 
+                     class="w-24 h-24 rounded-full object-cover border-4 border-blue-50 shadow-md">
+            </div>
+            
+            <h1 id="profile-name" class="text-3xl font-bold text-gray-900">...</h1>
+            <p id="profile-username" class="text-blue-600 font-medium mb-2">@...</p>
+            <p id="profile-joined" class="text-gray-400 text-sm">Member since ...</p>
+        </div>
+
+        <div class="border-t border-gray-200 pt-10">
+            <h2 class="text-xl font-bold text-gray-800 mb-6">Portfolio</h2>
+            
+            <div id="public-gallery" class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 min-h-[300px]">
+                <div class="col-span-full text-center py-10 text-gray-400">
+                    Loading artwork...
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="error-container" class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center hidden">
+        <h2 class="text-4xl font-bold text-gray-300 mb-4">404</h2>
+        <p class="text-gray-600 text-lg">User not found</p>
+        <a href="index.html" class="mt-6 text-blue-600 hover:underline">Go Home</a>
+    </div>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/main.js"></script> <script src="./js/public-profile.js"></script>
+</body>
+</html>

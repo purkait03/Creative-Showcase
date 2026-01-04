@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Showcase</title>
+    <link href="./css/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600 tracking-tight">
+                        Creative Showcase
+                    </a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div id="guest-nav" class="hidden flex items-center space-x-4">
+                        <a href="login.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Login</a>
+                        <a href="signup.html" class="bg-blue-600 text-white px-5 py-2 rounded-full shadow-sm hover:bg-blue-700 transition font-medium">
+                            Sign Up
+                        </a>
+                    </div>
+
+                    <div id="user-nav" class="hidden flex items-center space-x-6">
+                        <span class="text-gray-500 text-sm">Hello, <span id="nav-username" class="font-semibold text-gray-800">User</span></span>
+                        <a href="dashboard.html" class="text-gray-600 hover:text-blue-600 font-medium transition">Dashboard</a>
+                        <button id="logout-btn" class="text-red-500 hover:text-red-700 font-medium transition cursor-pointer">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Discover Digital Art</h1>
+            <p class="text-lg text-gray-500">A community gallery of memories and creations.</p>
+        </div>
+        
+        <div id="masonry-grid" class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 min-h-[50vh]">
+            
+            <div class="animate-pulse bg-gray-200 h-64 rounded-xl break-inside-avoid mb-4"></div>
+            <div class="animate-pulse bg-gray-200 h-48 rounded-xl break-inside-avoid mb-4"></div>
+            <div class="animate-pulse bg-gray-200 h-72 rounded-xl break-inside-avoid mb-4"></div>
+            <div class="animate-pulse bg-gray-200 h-56 rounded-xl break-inside-avoid mb-4"></div>
+        
+        </div>
+        
+        <div id="status-msg" class="text-center mt-12 text-gray-500 hidden"></div>
+    </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/main.js"></script> <script src="./js/home.js"></script> </body>
+</html>

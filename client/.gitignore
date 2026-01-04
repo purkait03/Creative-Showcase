@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Logs (if any)
+*.log
+
+# Environment files (if you ever add API keys)
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.swp
