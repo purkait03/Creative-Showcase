@@ -7,7 +7,7 @@ Built with the **MERN Stack** (MongoDB, Express, Node.js) and vanilla JavaScript
 ## 🚀 Live Demo
 
 - **Frontend (Website):** [Click here to visit](https://creative-showcase-azure.vercel.app)
-- **Backend (API):** [Click here to view API root]([https://creative-showcase-xhpn.onrender.com](https://creative-showcase-xhpn.onrender.com))
+- **Backend (API):** [Click here to view API root](https://creative-showcase-xhpn.onrender.com)
 
 ---
 
