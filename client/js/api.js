@@ -2,8 +2,8 @@
 
 // Initialize Axios
 const api = axios.create({
-    baseURL: 'http://localhost:8000/api/v1', // Adjust port if needed
-    withCredentials: true, // IMPORTANT: Sends cookies (accessToken/refreshToken)
+    baseURL: '/api/v1',  // <--- RELATIVE PATH
+    withCredentials: true,
     headers: {
         'Content-Type': 'application/json'
     }
